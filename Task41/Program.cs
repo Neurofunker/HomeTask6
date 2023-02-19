@@ -28,4 +28,4 @@ int SearchPositive(int[] array)
     return count;
 }
 int searchPositive = SearchPositive(arr);
-Console.WriteLine($" Чисел больше = {searchPositive}");
+Console.WriteLine($" Чисел больше нуля = {searchPositive}");

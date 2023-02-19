@@ -16,8 +16,6 @@ int[] CreateArray(int size)
     return array;
 }
 
-int[] arr = CreateArray(M);
-Console.WriteLine(arr);
 int SearchPositive(int[] array)
 {
     int count = 0;
@@ -27,5 +25,19 @@ int SearchPositive(int[] array)
     }
     return count;
 }
+
+
+void PrintArray(int[] arr)
+{
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if (i < arr.Length - 1) Console.Write($"{arr[i]}, ");
+        else Console.Write($"{arr[i]}");
+    }
+}
+int[] arr = CreateArray(M);
 int searchPositive = SearchPositive(arr);
-Console.WriteLine($" Чисел больше нуля = {searchPositive}");
+PrintArray(arr);
+{
+ Console.WriteLine($" -> {searchPositive}");
+}
